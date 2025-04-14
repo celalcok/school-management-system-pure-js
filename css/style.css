@@ -1,0 +1,145 @@
+body {
+    font-family: sans-serif;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #0f0f0f;
+}
+
+
+body.light {
+    background-color: #f5f5f5;
+    color: #222;
+}
+
+body.dark h1 {
+    color: #ffffff;
+}
+
+body.dark {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+
+/* App box */
+#app {
+    background-color: inherit;
+    color: inherit;
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.top-buttons{
+    max-width: 990px;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 13px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
+
+body.dark .top-buttons{
+    border: 1px solid gray;
+}
+.top-buttons button{
+    margin: 0;
+}
+body.dark #app{
+    border:1px gray solid;
+}
+
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+body.light table th,
+body.light table td {
+    border-color: #ccc;
+}
+
+/* Form Elements */
+input,
+select,
+button {
+    margin: 5px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    font-size: 14px;
+}
+
+input,
+select {
+    width: 200px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+/* Form Elements End */
+div#menu {
+    border-top: 2px solid #4caf50;
+    padding: 5px;
+    border-bottom: 2px solid #4caf50;
+}
+
+/* Dashboard */
+.dashboard-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin-top: 20px;
+  }
+  
+  .stat-card {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #444;
+  }
+  body.light .stat-card {
+    background-color: #f0f0f0;
+    border-color: #ccc;
+  }
+  /* Dashboard End */
+
+  /* Settings */
+
+  .setting-group {
+    margin: 16px 0;
+  }
+  .setting-group label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: bold;
+  }
+  .setting-group select {
+    padding: 8px;
+    border-radius: 6px;
+    width: 200px;
+  }
+/* Settings End   */
