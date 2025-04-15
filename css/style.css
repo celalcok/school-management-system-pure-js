@@ -36,6 +36,8 @@ body.dark {
 }
 
 .top-buttons{
+    display: flex;
+    gap: 10px;
     max-width: 990px;
     margin: 20px auto;
     padding: 10px;
@@ -143,3 +145,78 @@ div#menu {
     width: 200px;
   }
 /* Settings End   */
+
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+    body {
+      padding: 12px;
+    }
+  
+    input, textarea, select, button {
+      width: 100% !important;
+      box-sizing: border-box;
+    }
+  
+    #taskList {
+      grid-template-columns: 1fr;
+    }
+  
+    .task-card {
+      padding: 12px;
+    }
+  
+    .task-title {
+      font-size: 16px;
+    }
+  
+    .task-footer {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+    }
+  
+    .task-footer button {
+      width: 100%;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        max-width: 600px;
+      }
+      
+      form input,
+      form textarea,
+      form button {
+        width: 100%;
+      }
+
+      #taskList {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
+
+   .top-buttons{
+    flex-direction: column;
+   }
+      
+  }
+
+  @media (min-width: 1024px) {
+    #taskList {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  
+  @media (max-width: 500px) {
+    h1, h2 {
+        text-align: center;
+      }
+}
+  
