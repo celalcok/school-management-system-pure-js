@@ -45,8 +45,3 @@ A lightweight, modular, and fully client-side school management system built usi
 - JavaScript (ES6 Modules)  
 - `localStorage` API
 
-## ✍️ Author
-
-Built by **Celal** — proudly crafted using pure front-end power 💪  
-No framework. No backend. Just smart code.
-
